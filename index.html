@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <section class="title">
+        <div class="title-list">
+            <a href="#">
+                Điện thoại di động <i class="fa-solid fa-angle-right"></i> Apple(iPhone) - Quốc tế
+            </a>
+        </div>
+        <h1>Apple iPhone 12</h1>
+    </section>
+    <section class="product">
+        <div class="product-list">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-black.jpg" alt="">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-1.jpg"  alt="">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-11.jpg"  alt="">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-13.jpg"  alt="">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-3.jpg"  alt="">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-7.jpg"  alt="">
+            <img onclick="myFun(this)" src="./img/iphone-12-chinh-hang-5.jpg"  alt="">   
+        </div>
+        <div class="product-container">
+            <img id="imgBox" src="./img/iphone-12-chinh-hang-black.jpg" alt="">
+        </div>
+        <div class="product-info">
+            <div class="product-price">
+                <span>Giá tại:
+                    <select name="" id="">
+                        <option value="">Hà Nội</option>
+                        <option value="">Đà Nẵng</option>
+                        <option value="">TP Hồ Chí Minh</option>
+                    </select>
+                </span>
+                <div class="price">
+                    13.350.000 ₫ - 18.050.000 ₫<span>₫13.950.000₫</span> 
+                </div>
+                <h4>Chọn phiên bản để xem giá và chi nhánh còn hàng:</h4>
+                <div class="color">
+                    <span>Màu săc:</span>
+                    <div class="color-list">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                    </div>
+                    <div class="color-text">
+                        <p>(Đen)</p>
+                    </div>
+                </div>
+                <div class="memory">
+                    <span>Bộ nhớ:</span>
+                    <div class="memory-list">
+                        <div class="menory">
+                           <p>64GB</p>
+                        </div>
+                        <div class="menory">
+                            <p>128GB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="source">
+                    <span>Nguồn gốc:</span>
+                    <a href="#">Nhật Bản</a>
+                    <a href="#">Việt Nam - VN/A</a>
+                </div>
+            </div>
+
+            <h3>Cấu hình Điện thoại iPhone 12 64GB</h3>
+            <table id="product-table">
+                <tr>
+                    <td>Màn hình:</td>
+                    <td>OLED6.1"Super Retina XDR</td>
+                </tr>
+                <tr>
+                    <td>Hệ điều hành:</td>
+                    <td>iOS 15</td>
+                </tr>
+                <tr>
+                    <td>Camera sau:</td>
+                    <td>2 camera 12 MP</td>
+                </tr>
+                <tr>
+                    <td>Camera trước:</td>
+                    <td>12 MP</td>
+                </tr>
+                <tr>
+                    <td>Chip:</td>
+                    <td>Apple A14 Bionic</td>
+                </tr>
+                <tr>
+                    <td>RAM:</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td>Bộ nhớ trong:</td>
+                    <td>64 GB</td>
+                </tr>
+                <tr>
+                    <td>SIM:</td>
+                    <td>1 Nano SIM & 1 eSIMHỗ trợ 5G</td>
+                </tr>
+                <tr>
+                    <td>Pin, Sạc:</td>
+                    <td>2815 mAh20 W</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        function myFun(productList) {
+            var fullImg = document.getElementById("imgBox");
+            fullImg.src = productList.src;
+        }
+    </script>
+</body>
+</html>
